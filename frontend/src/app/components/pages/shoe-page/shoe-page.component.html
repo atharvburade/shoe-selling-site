@@ -1,0 +1,47 @@
+<app-not-found
+  [visible]="!shoe"
+  notFoundMessage="shoe Not Found"
+  resetLinkText="Back To Homepage">
+</app-not-found>
+<div *ngIf="shoe" class="container">
+  <img [src]="shoe.imageUrl" [alt]="shoe.name"/>
+
+  <div class="details">
+    <div class="header">
+      <span class="name">
+        {{shoe.name}}
+      </span>
+      <span class="favorite {{shoe.favorite? '': 'not'}}">❤</span>
+    </div>
+    <div class="rating">
+      <star-rating [stars]="shoe.stars" [size]="1.8" />
+    </div>
+
+    <div class="origins">
+      <span *ngFor="let origin of shoe.origins">
+        {{origin}}
+      </span>
+    </div>
+
+    <div class="tags">
+      <a *ngFor="let tag of shoe.tags" routerLink="/tag/{{tag}}">
+        {{tag}}
+      </a>
+    </div>
+
+    <div class="delivery-time">
+      <span>
+        Time to delivery about <strong>{{shoe.delieryTime}}</strong> days
+      </span>
+    </div>
+
+    <div class="price">
+      <span>
+        {{shoe.price | currency: 'INR'}}
+      </span>
+    </div>
+
+    <button (click)="addToCart()">Add To Cart</button>
+
+  </div>
+</div>

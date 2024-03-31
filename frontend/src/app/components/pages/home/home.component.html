@@ -1,0 +1,42 @@
+<app-search></app-search>
+<app-tags></app-tags>
+<app-not-found
+[visible]="!shoes || !shoes.length"
+resetLinkText="Reset Search">
+</app-not-found>
+<ul>
+  <li *ngFor="let shoe of shoes">
+    <a routerLink="/shoe/{{shoe.id}}">
+      <img [src]="shoe.imageUrl" [alt]="shoe.name" />
+      <div class="content">
+        <div class="name">
+          {{shoe.name}}
+        </div>
+        <span class="favorite {{shoe.favorite?'':'not'}}">
+          ❤
+        </span>
+        <div class="stars">
+          <star-rating [stars]="shoe.stars" />
+        </div>
+        <div class="product-item-footer">
+          <div class="origins">
+            <span *ngFor="let origin of shoe.origins">
+              {{origin}}
+            </span>
+          </div>
+
+          <div class="cook-time">
+            <span>🕒</span>
+            {{shoe.delieryTime}}
+          </div>
+        </div>
+
+        <div class="price">
+          <span>
+            {{shoe.price | currency: 'INR'}}
+          </span>
+        </div>
+      </div>
+    </a>
+  </li>
+</ul>
