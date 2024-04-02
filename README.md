@@ -1,6 +1,27 @@
 ##  Project Overview
 Created a full-fledged shoe selling site with Angular, Express, Node.js, and MongoDB involves several steps. Below, I'll provide an outline of how you can implement each feature you mentioned:
 
+**Login page**
+![logo](https://github.com/atharvburade/shoe-selling-site/blob/main/login%20page.PNG)
+
+**Register page**
+![logo](https://github.com/atharvburade/shoe-selling-site/blob/main/regiser%20page.PNG)
+
+**Shoe listing ,filter page**
+![logo](https://github.com/atharvburade/shoe-selling-site/blob/main/shoe%20listing%20page.PNG)
+
+**Shoe preview page**
+![logo](https://github.com/atharvburade/shoe-selling-site/blob/main/shoe%20page.PNG)
+
+**Checkout page**
+![logo](https://github.com/atharvburade/shoe-selling-site/blob/main/checkout%20page.PNG)
+
+**Payment page**
+![logo](https://github.com/atharvburade/shoe-selling-site/blob/main/payment%20option.PNG)
+
+**Mongodb database page**
+![logo](https://github.com/atharvburade/shoe-selling-site/blob/main/mongodb.PNG)
+
 ### Backend (Node.js, Express, MongoDB):
 
 1. **Setup Express Server:**
@@ -92,26 +113,6 @@ Created a full-fledged shoe selling site with Angular, Express, Node.js, and Mon
 
 By following this outline, created a robust shoe selling site showcasing your skills in the MEAN stack. Remember to continuously test and iterate on your application to ensure it meets the desired requirements and user expectations.
 
-**Login page**
-![logo](https://github.com/atharvburade/shoe-selling-site/blob/main/login%20page.PNG)
-
-**Register page**
-![logo](https://github.com/atharvburade/shoe-selling-site/blob/main/regiser%20page.PNG)
-
-**Shoe listing ,filter page**
-![logo](https://github.com/atharvburade/shoe-selling-site/blob/main/shoe%20listing%20page.PNG)
-
-**Shoe preview page**
-![logo](https://github.com/atharvburade/shoe-selling-site/blob/main/shoe%20page.PNG)
-
-**Checkout page**
-![logo](https://github.com/atharvburade/shoe-selling-site/blob/main/checkout%20page.PNG)
-
-**Payment page**
-![logo](https://github.com/atharvburade/shoe-selling-site/blob/main/payment%20option.PNG)
-
-**Mongodb database page**
-![logo](https://github.com/atharvburade/shoe-selling-site/blob/main/mongodb.PNG)
 
 Note - Updating Packages (Optional)
     1.  Install npm-check-upates as a global package
